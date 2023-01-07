@@ -60,6 +60,11 @@ def solve_func(eq1,eq2):
 
 def update_status(*args):
     func = str(ent1.get())
+    func2 = str(ent2.get())
+    if(func2 != '' and func == ''):
+        txt1.delete(1.0,END)
+        txt1.insert(1.0,"請先輸入第一式")
+        return
     if(func == ''):
         txt1.delete(1.0,END)
         txt1.insert(1.0,"請輸入一元一次方程式/一元二次方程式/一元一次不等式/二元二次方程式")
@@ -129,7 +134,7 @@ txt1.insert(1.0,"請輸入一元一次方程式/一元二次方程式/一元一�
 
 # Update
 ent1.bind("<KeyRelease>",update_status)
-
+ent2.bind("<KeyRelease>",update_status)
 
 # Start
 ent1.focus()

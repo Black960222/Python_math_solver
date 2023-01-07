@@ -219,7 +219,7 @@ def solve_21(eq1,eq2,varible1,varible2):
 
 
 	x = round(x,5)
-	y = round(x,5)
+	y = round(y,5)
 	x = str(x).replace(".0",'')
 	y = str(y).replace(".0",'')
 
@@ -276,6 +276,8 @@ def solve_12(eq,varible):
 	try:
 		x1 = (-b+sqrt(pow(b,2)-4*a*c))/(2*a)
 		x2 = (-b-sqrt(pow(b,2)-4*a*c))/(2*a)
+		x1 = round(x1,5)
+		x2 = round(x2,5)
 	except ValueError:
 		return(None,None)
 	if (x1 == x2):
