@@ -12,7 +12,6 @@ English version is not ready yet!
 (都是國中數學，我用不上:D)
 
 Python module requirements:
-tkinter math
-to install, run:
-pip install tkinter
-pip install math
+tkinter and math
+(To install, run:
+sudo pip install tkinter && pip install math)
